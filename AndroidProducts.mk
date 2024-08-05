@@ -14,4 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_gta4l.mk
+    $(LOCAL_DIR)/droidx_gta4l.mk
+
+COMMON_LUNCH_CHOICES := \
+    droidx_gta4l-ap2a-user \
+    droidx_gta4l-ap2a-userdebug \
+    droidx_gta4l-ap2a-eng

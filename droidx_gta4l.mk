@@ -22,11 +22,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/samsung/gta4l/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_tablet.mk)
+$(call inherit-product, vendor/droidx/config/common_full_tablet.mk)
+
+DROIDX_BUILD_TYPE := OFFICIAL
+DROIDX_GAPPS := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_CALL_RECORDING := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := gta4l
-PRODUCT_NAME := lineage_gta4l
+PRODUCT_NAME := droidx_gta4l
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T505
 PRODUCT_MANUFACTURER := samsung
